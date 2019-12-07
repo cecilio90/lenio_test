@@ -1,0 +1,14 @@
+.footer {
+    @extend %position-abs;
+    @extend %text-center;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 20px 0;
+    background-color: #1d9ce5;
+    color: white;
+}

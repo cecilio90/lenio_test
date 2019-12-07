@@ -1,0 +1,14 @@
+@import './styles/header';
+
+%position-abs {
+  position: absolute;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  padding-right: 20px; 
+  padding-left: 20px; 
+}

@@ -7,11 +7,11 @@ import {
 export const fetchMembers = () => async dispatch => {
     const response = await members.get('116/senate/members.json');
 
-    dispatch({ type: FETCH_MEMBERS, payload: response.data })
+    dispatch({ type: FETCH_MEMBERS, payload: response.data.results })
 }
 
-export const fetchStream = id => async dispatch => {
+export const fetchMember = id => async dispatch => {
     const response = await members.get(`members/${id}.json`);
 
-    dispatch({ type: FETCH_MEMBER, payload: response.data })
+    dispatch({ type: FETCH_MEMBER, payload: response.data.results })
 }

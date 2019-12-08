@@ -1,5 +1,5 @@
 .search{
-    text-align: center;
+    @extend %text-center;
     margin: 15px;
 
     &__filter {

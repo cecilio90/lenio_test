@@ -14,7 +14,7 @@ export default (state = {} , action) => {
             };
 
         case FETCH_MEMBER:
-            return { ...state, response: action.payload };
+            return { ...state, [action.payload[0].id]: action.payload[0] };
 
         default:
             return state;

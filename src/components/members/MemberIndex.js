@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
+import { Link } from 'react-router-dom'
 
 import { fetchMembers} from '../../actions';
 import Pagination from '../Pagination';
@@ -42,8 +43,10 @@ class MemberIndex extends PureComponent
         return this.getCurrentMembers().map(member => {
             return (
                 <li className="members__list-item" key={member.id}>
-                    {member.first_name}
-                    <div>{member.title}</div>
+                    <Link to={`/member/${member.id}`}>
+                        {member.first_name}
+                        <div>{member.title}</div>
+                    </Link>
                 </li>
             )
         })

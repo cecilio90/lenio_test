@@ -5,7 +5,7 @@
         font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
         margin: 0;
         padding: 0;
-        text-align: center;
+        @extend %text-center
     }
 
     &__list {
@@ -17,8 +17,12 @@
         &-item {
           font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
           border-bottom: 1px solid #ccc;
-          > div {
-              font-size: 15px;
+          > a {
+            text-decoration: none;
+            color: black;
+              > div {
+                  font-size: 15px;
+              }
           }
 
           &:hover{

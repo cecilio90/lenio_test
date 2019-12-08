@@ -13,7 +13,7 @@ const App = () => {
             <Header />
             <div className="main">
                 <Route path="/" exact component={MemberIndex} />
-                <Route path="/member/show/:id" exact component={MemberShow} />
+                <Route path="/member/:id" exact component={MemberShow} />
             </div>
             <Footer />
         </BrowserRouter>

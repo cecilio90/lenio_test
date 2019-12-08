@@ -1,0 +1,15 @@
+.member {
+    width: 50%;
+    margin: 20px auto;
+
+    &__title {
+        @extend %text-center;
+    }
+
+    &__info {
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+}

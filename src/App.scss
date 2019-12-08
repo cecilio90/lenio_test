@@ -1,6 +1,7 @@
 @import './styles/header';
 @import './styles/footer';
 @import './styles/memberList';
+@import './styles/memberShow';
 @import './styles/paginate';
 @import './styles/filter';
 
@@ -29,4 +30,16 @@ html, body {
     left: 0;
     right: 0;
   }
+}
+
+.button-back {
+  border: 1px solid #299ce5;
+  color: white;
+  padding: 7px 18px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #299ce5;
+  display: table;
+  margin: 0 auto;
+  font-weight: bold;
 }

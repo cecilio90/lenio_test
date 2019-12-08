@@ -1,0 +1,36 @@
+.members {
+    width: 100%;
+    
+    &__title {
+        font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        width: 70%;
+        margin: 20px auto;
+
+        &-item {
+          font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+          border-bottom: 1px solid #ccc;
+          > div {
+              font-size: 15px;
+          }
+
+          &:hover{
+              background-color: #f1ebeb;
+          }
+        }
+         
+        &-item:last-child {
+          border: none;
+        }
+    }
+}
+   
+   
+   

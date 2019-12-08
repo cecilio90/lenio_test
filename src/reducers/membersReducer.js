@@ -5,20 +5,12 @@ import {
     FETCH_MEMBER,
 } from '../actions/type'
 
-const initialState = {
-    num_results: 0,
-    offset: 0,
-    members: {}
-}
-
-export default (state = initialState, action) => {
+export default (state = {} , action) => {
     switch(action.type) {
         case FETCH_MEMBERS:
             return {
                 ...state,
-                num_results: action.payload[0].num_results,
-                offset: action.payload[0].offset,
-                members: { ...state.members, ..._.mapKeys(action.payload[0].members, 'id')}
+                ..._.mapKeys(action.payload[0].members, 'id')
             };
 
         case FETCH_MEMBER:

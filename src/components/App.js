@@ -9,16 +9,16 @@ import '../App.scss';
 
 const App = () => {
     return (
-        <div className="main">
+        <>
             <BrowserRouter>
-                <div>
-                    <Header />
+                <Header />
+                <div className="main">
                     <Route path="/" exact component={MemberList} />
                     <Route path="/member/show/:id" exact component={MemberShow} />
-                    <Footer />
                 </div>
+                <Footer />
             </BrowserRouter>
-        </div>
+        </>
     )
 };
 

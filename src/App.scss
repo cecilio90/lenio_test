@@ -1,5 +1,7 @@
 @import './styles/header';
 @import './styles/footer';
+@import './styles/memberList';
+@import './styles/paginate';
 
 %position-abs {
   position: absolute;
@@ -9,11 +11,12 @@
   text-align: center;
 }
 
-body {
+html, body {
   margin: 0;
+  height: 100%;
 }
 
 .main {
-  padding-right: 20px; 
-  padding-left: 20px; 
+  min-height: 450px;
+  padding: 20px; 
 }

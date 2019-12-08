@@ -83,9 +83,9 @@ class MemberIndex extends PureComponent
     }
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ members }) => {
     return {
-        members: Object.values(state.members)
+        members: Object.values(members)
     }
 }
 

@@ -1,0 +1,17 @@
+.search{
+    text-align: center;
+    margin: 15px;
+
+    &__filter {
+        padding: 5px;
+        width: 40%;
+        height: 21px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
